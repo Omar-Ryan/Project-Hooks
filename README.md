@@ -1,4 +1,4 @@
-The project is a react hooks (useState) application
+### The project is a react hooks (useContext) application
 
 # Getting Started with Create React App
 
