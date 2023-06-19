@@ -9,3 +9,7 @@ button {
   padding: 5px;
   margin: 5px;
 }
+.reset:hover{
+  background-color: red;
+  color: white;
+}

@@ -1,6 +1,7 @@
 import { React, useReducer } from "react";
 
 const initialState = 0;
+
 const Reducer = (state, action) => {
   switch (action) {
     case "increment":
@@ -15,13 +16,18 @@ const Reducer = (state, action) => {
 };
 
 const ReducerOne = () => {
-  const [count, dispatch] = useReducer(Reducer, initialState);
+  const [countOne, dispatchOne] = useReducer(Reducer, initialState);
+  const [countTwo, dispatchTwo] = useReducer(Reducer, initialState);
   return (
     <div>
-      <h1>{count}</h1>
-      <button onClick={()=> dispatch("increment")} >Increment</button>
-      <button onClick={()=> dispatch("decrement")} >Decrement</button>
-      <button onClick={()=> dispatch("reset")} >Reset</button>
+      <h1>Count One : {countOne}</h1>
+      <button onClick={() => dispatchOne("increment")}>Increment</button>
+      <button onClick={() => dispatchOne("decrement")}>Decrement</button>
+      <button className="reset" onClick={() => dispatchOne("reset")}>Reset</button>
+      <h1>Count Two : {countTwo}</h1>
+      <button onClick={() => dispatchTwo("increment")}>Increment</button>
+      <button onClick={() => dispatchTwo("decrement")}>Decrement</button>
+      <button className="reset" onClick={() => dispatchTwo("reset")}>Reset</button>
     </div>
   );
 };
