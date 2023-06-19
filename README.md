@@ -1,4 +1,5 @@
 ### The project is a react hooks (useContext) application
+### The project is a react hooks (useReducer) application
 
 # Getting Started with Create React App
 
