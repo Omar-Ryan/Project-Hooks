@@ -1,5 +1,6 @@
 import {React , createContext} from "react";
 import ContextA from "./components/ContextA";
+import ReducerOne from "./components/ReducerOne";
 import "./App.css";
 
 export const UserContext = createContext();
@@ -12,6 +13,7 @@ function App() {
         <ContextA/>
         </ChannelContext.Provider>
       </UserContext.Provider>
+      <ReducerOne/>
     </div>
   );
 }
