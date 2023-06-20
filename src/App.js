@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="app">
       <UserContext.Provider value={"O.Ryan"}>
-        <ChannelContext.Provider value={"Step By Step"} >
+        <ChannelContext.Provider value={"Step By Step"} > 
         <ContextA/>
         </ChannelContext.Provider>
       </UserContext.Provider>
